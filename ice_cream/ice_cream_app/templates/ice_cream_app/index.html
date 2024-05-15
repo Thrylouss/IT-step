@@ -1,0 +1,9 @@
+{% extends 'ice_cream_app/layout.html' %}
+
+{% block main %}
+    <ul>
+        {% for child in children %}
+            <li>{{ child.name }}: {{ child.father }} - {{ child.mother }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
